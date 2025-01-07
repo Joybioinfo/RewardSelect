@@ -42,7 +42,7 @@ const RewardSelector: React.FC = () => {
     });
 
     const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
-    let random = Math.random() * totalWeight;
+    const random = Math.random() * totalWeight;
     let currentWeight = 0;
     
     for (let i = 0; i < rewards.length; i++) {
